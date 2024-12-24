@@ -8,3 +8,162 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ @import "bootstrap";
+
+ body {
+   background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+   font-family: 'Poppins', sans-serif;
+   color: #333;
+   margin: 0;
+ }
+ 
+ .container {
+   max-width: 900px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px;
+ }
+ 
+ .card {
+   background: #f8f9fa;
+   border-radius: 15px;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   padding: 20px;
+   transition: transform 0.2s, box-shadow 0.2s;
+ }
+ 
+ .card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .card h5 {
+   font-size: 24px;
+   font-weight: 600;
+ }
+ 
+ .card p {
+   font-size: 18px;
+   line-height: 1.5;
+ }
+ 
+ .form-label {
+   font-size: 16px;
+   font-weight: bold;
+   color: #333;
+ }
+ 
+ .form-control {
+   border-radius: 10px;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   transition: border-color 0.3s ease-in-out;
+ }
+ 
+ .form-control:focus {
+   border-color: #66a6ff;
+   box-shadow: 0px 0px 5px rgba(102, 166, 255, 0.5);
+ }
+ 
+ .btn {
+   border-radius: 20px;
+   padding: 10px 15px;
+   font-size: 16px;
+   text-transform: uppercase;
+   text-decoration: none !important;
+   font-weight: 600;
+   transition: all 0.3s;
+ }
+ 
+ /* View Button (Primary) */
+ .btn-primary {
+   background-color: #66a6ff;
+   border: none;
+   color: #fff;
+ }
+ 
+ .btn-primary:hover {
+   background-color: #4a90e2;
+   color: #fff;
+ }
+ 
+ /* Edit Button (Light Purple) */
+ .btn-warning {
+   background-color: #ce93d8;
+   border: none;
+   color: #fff;
+ }
+ 
+ .btn-warning:hover {
+   background-color: #ba68c8;
+   color: #fff;
+ }
+ 
+ /* Delete Button (Danger) */
+ .btn-danger {
+   background-color: #ff6b6b;
+   border: none;
+   color: #fff;
+   margin-top: 15px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .btn-danger:hover {
+   background-color: #e84141;
+ }
+ 
+ /* Create New Post Button (Success) */
+ .btn-create {
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   font-size: 16px;
+   border-radius: 20px;
+   text-transform: uppercase;
+   font-weight: 600;
+   transition: background-color 0.3s ease;
+   margin-bottom: 20px;
+ }
+ 
+ .btn-create:hover {
+   background-color: #45a049;
+ }
+ 
+ /* Add extra spacing below buttons for mobile views */
+ .card .btn:last-child {
+   margin-right: 0;
+ }
+ 
+ .card .btn {
+   margin-bottom: 10px;
+ }
+ 
+ /* Empty Space Styling */
+ .empty-space {
+   height: 50px;
+   width: 100%;
+   background-color: transparent;
+   margin-bottom: 20px;
+ }
+ 
+ /* Navbar Styling */
+ .navbar {
+   background: linear-gradient(to right, #66a6ff, #ff9a9e);
+   border: none;
+   box-shadow: none;
+ }
+ 
+ .navbar a {
+   color: #fff;
+   font-weight: 600;
+   text-decoration: none !important;
+ }
+ 
+ .navbar a:hover {
+   opacity: 0.8;
+ }
+ 
